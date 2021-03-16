@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Clase10_Login</string>
+    <string name="acceder">Acceder</string>
+    <string name="clave_invalida">CLAVE INVALIDA</string>
+</resources>

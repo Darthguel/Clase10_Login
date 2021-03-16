@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyBase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="176dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="307dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="50dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="Ingrese Usuario"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="#F4F3F3"
+            android:textColorHint="#F6F6F4" />
+
+        <EditText
+            android:id="@+id/editTextNumberPassword"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:ems="10"
+            android:hint="Ingrese clave"
+            android:importantForAutofill="no"
+            android:inputType="numberPassword"
+            android:textAlignment="center"
+            android:textColorHint="#F6F5F5" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="246dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#5F1010"
+        android:onClick="Mostrar"
+        android:text="@string/acceder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="374dp"
+        android:layout_height="56dp"
+        android:autoSizeTextType="uniform"
+        android:autoText="false"
+        android:background="#FFEB3B"
+        android:backgroundTint="#020200"
+        android:text="@string/clave_invalida"
+        android:textAlignment="center"
+        android:textColor="#CDDC39"
+        android:visibility="invisible"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+</androidx.constraintlayout.widget.ConstraintLayout>
